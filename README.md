@@ -6,7 +6,7 @@ select distinct district from sakila.address where district like 'K%a' and distr
 
 ### Задание 2  
 
-select payment_id, cast(payment_date as date),amount from sakila.payment where amount > 10 and payment_date between '2005-06-15' and '2005-06-18';
+select payment_id,payment_date,amount from sakila.payment where amount > 10 and cast(payment_date as date) between '2005-06-15' and '2005-06-18';
 
 ### Задание 3
 
